@@ -35,5 +35,8 @@ Access to confidential files and directories can lead to data breaches and possi
 
 | Mitigation | Description |
 |------------|-------------|
-
+| Whitelist allowed IP addresses | Only allow authorized users from select IP addresses. | 
+| Account Use Policies (MITRE ID:M1036 / D3-AL) | Set account policies to prevent numerous unauthorized attempts. |
+| Multi-Factor Authentication (MITRE ID: M1036 / D3-MFA) | Use MFA to authenticate authorize users. |
+| Restrict File & Directory Permissions (MITRE ID: M10222) | Restrict read/write access. |
 
