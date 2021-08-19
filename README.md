@@ -10,18 +10,35 @@ The following write-up will articulate the Red Team's engagement on a vulnerable
 
 **Red Team**
 
-2.Scanning
+Start by enumerating the network:
 
 ![nmap_results](https://github.com/bonroth512/Capstone_Project/blob/main/Images/nmap_results.PNG)
 
+Ran a dirb command to determine any additional URL's on the website.
+
 ![dirb_returns](https://github.com/bonroth512/Capstone_Project/blob/main/Images/dirb_returns.PNG)
+
+After identifying the target's IP and additional URL's, viewed the web server in the browser to determine more about the target.
+Navigating through the directories revealed a note regarding a confidential folder.
 
 ![secret_folder](https://github.com/bonroth512/Capstone_Project/blob/main/Images/mention-of-secretfolder.PNG)
 
-3.Exploitation
-4.Post Exploitation
-5.Reporting
+This folder was password protected and proceeded to perform a brute force attack against the web application.  Using the hydra command to run the attack.
 
+![hydra](https://github.com/bonroth512/Capstone_Project/blob/main/Images/hydra_crack_better.PNG)
+
+
+
+![webdav_connections](https://github.com/bonroth512/Capstone_Project/blob/main/Images/secret_folder_info.PNG)
+
+![cracked_hash](https://github.com/bonroth512/Capstone_Project/blob/main/Images/cracked_hash.PNG)
+![webdav_authen.](https://github.com/bonroth512/Capstone_Project/blob/main/Images/webdav_authentication.PNG)
+
+![msfvenom](https://github.com/bonroth512/Capstone_Project/blob/main/Images/msfvenom_reverse-shell.PNG)
+
+![php_embed](https://github.com/bonroth512/Capstone_Project/blob/main/Images/php_embedded_in_webdav.PNG)
+
+![meterpreter](https://github.com/bonroth512/Capstone_Project/blob/main/Images/meterpreter_session.PNG)
 
 
 ***
