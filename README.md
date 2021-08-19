@@ -10,9 +10,13 @@ The following write-up will articulate the Red Team's engagement on a vulnerable
 
 **Red Team**
 
-1.Planning & reconnassance
 2.Scanning
 
+![nmap_results](https://github.com/bonroth512/Capstone_Project/blob/main/Images/nmap_results.PNG)
+
+![dirb_returns](https://github.com/bonroth512/Capstone_Project/blob/main/Images/dirb_returns.PNG)
+
+![secret_folder](https://github.com/bonroth512/Capstone_Project/blob/main/Images/mention-of-secretfolder.PNG)
 
 3.Exploitation
 4.Post Exploitation
