@@ -8,7 +8,7 @@ The following write-up will articulate the Red Team's engagement on a vulnerable
 
 ***
 
-**Red Team**
+### **Red Team**
 
 Start by enumerating the network with NMAP.  
 
