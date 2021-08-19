@@ -8,6 +8,20 @@ The following write-up will articulate the Red Team's engagement on a vulnerable
 
 ***
 
+**Red Team**
+
+1.Planning & reconnassance
+2.Scanning
+
+
+3.Exploitation
+4.Post Exploitation
+5.Reporting
+
+
+
+***
+
 **Blue Team Mitigation Strategies**
 
 Vulnerabilities to Mitigate:
@@ -62,7 +76,7 @@ Prevention of Reverse Shell Uploads
 | Implementing behavioral-based Analysis to Anti-Virus Algorithms | Improving the antivirus to look beyond the signature scans alone. |
 | Inbound Traffic Filter (D3-ITF) | Implement filtering policies to determine nature of suspicious network traffic. |
 
-
+![defend_matrix](https://github.com/bonroth512/Capstone_Project/blob/main/Images/defend_matrix.PNG)
 
 
 
