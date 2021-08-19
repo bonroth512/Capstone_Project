@@ -1,6 +1,6 @@
 # Capstone_Project
 
-The following write-up will articulate the Red Team's engagement on a vulnerable VM and Blue Team's response to this attack. 
+The following write-up will articulate the Red Team's engagement on a vulnerable VM and Blue Team's analysis of the attack. 
 
 ***
 
