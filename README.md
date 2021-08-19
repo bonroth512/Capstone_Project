@@ -58,6 +58,11 @@ Prevention of Reverse Shell Uploads
 |------------|-------------|
 | Whitelist Allowed Users (D3-EAL) | Only whitelist allowed authorized users. |
 | Remote Terminal Session Detection (D3-RTSD) | Detection of session datatsets for signs of remote access. |
+| Restrict executable from Temp Directories | Limited filetypes and the location of uploading files can reduce the attack surface. |
+| Implementing behavioral-based Analysis to Anti-Virus Algorithms | Improving the antivirus to look beyond the signature scans alone. |
+| Inbound Traffic Filter (D3-ITF) | Implement filtering policies to determine nature of suspicious network traffic. |
+
+
 
 
 
