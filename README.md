@@ -52,7 +52,11 @@ Gaining remote access capabilities then allows for the post-exploitation phase t
 
 ***
 
-**Blue Team Mitigation Strategies**
+### **Blue Team**
+
+***
+
+### **Blue Team Mitigation Strategies**
 
 Vulnerabilities to Mitigate:
 - Blocking a Port Scan
