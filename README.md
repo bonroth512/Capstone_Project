@@ -10,7 +10,7 @@ The following write-up will articulate the Red Team's engagement on a vulnerable
 
 **Red Team**
 
-Start by enumerating the network:
+Start by enumerating the network with NMAP.  
 
 ![nmap_results](https://github.com/bonroth512/Capstone_Project/blob/main/Images/nmap_results.PNG)
 
@@ -27,19 +27,28 @@ This folder was password protected and proceeded to perform a brute force attack
 
 ![hydra](https://github.com/bonroth512/Capstone_Project/blob/main/Images/hydra_crack_better.PNG)
 
-
+With access to Ashton credentials, was able to access the secret_folder.  
 
 ![webdav_connections](https://github.com/bonroth512/Capstone_Project/blob/main/Images/secret_folder_info.PNG)
+
+Following the instructions will gain access to webdav folder. So looking to unhash the hash provided for a user's account and then to authenticate as Ryan. 
 
 ![cracked_hash](https://github.com/bonroth512/Capstone_Project/blob/main/Images/cracked_hash.PNG)
 ![webdav_authen.](https://github.com/bonroth512/Capstone_Project/blob/main/Images/webdav_authentication.PNG)
 
+With access to the webdav folder, placing an executables within is next. Msfvenom was used to create a payload to establish a reverse tcp shell.  This will be uploaded to the webdav folder to call out and evade network securitiy controls.    
+
 ![msfvenom](https://github.com/bonroth512/Capstone_Project/blob/main/Images/msfvenom_reverse-shell.PNG)
+
+Placing the executable in the web server and clicking on it is then able to connect to the listener to establish the reverse shell.
 
 ![php_embed](https://github.com/bonroth512/Capstone_Project/blob/main/Images/php_embedded_in_webdav.PNG)
 
+In Metasploit, configure the settings the run exploit php/meterpreter/reverse_tcp.  This exploit is set to listen for the target's broadcast and on the correct port.  Once the php file is executed on the target's machine and metasploit runs the exploit, the meterpreter session will be connected and remote access is established.     
+
 ![meterpreter](https://github.com/bonroth512/Capstone_Project/blob/main/Images/meterpreter_session.PNG)
 
+Gaining remote access capabilities then allows for the post-exploitation phase to be done on the target.   
 
 ***
 
