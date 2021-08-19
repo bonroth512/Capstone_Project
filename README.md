@@ -29,9 +29,9 @@ An unwarranted port scan across your network signifies intent from external acto
 
 -Some mitigation recommendations are reflective of the MITRE mitigiation framework as well as the MITRE D3FEND Matrix.  
 
-Unauthorized Users Accessing Confidential Directories
+Unauthorized Users Accessing Confidential Directories / Shared Folders
 
-Access to confidential files and directories can lead to data breaches and possible loss of integrity.  It is imperative to allow only thoses who have authorized access and continue to monitor activity around critical data.  
+Access to confidential directories and shared folders can lead to data breaches and malicious file injections.  It is imperative to allow only thoses who have authorized access and continue to monitor activity around critical data.  Analyzing network traffic based on a baseline from normal operational levels can provide the template to identify unusual behavior.  
 
 | Mitigation | Description |
 |------------|-------------|
@@ -39,4 +39,10 @@ Access to confidential files and directories can lead to data breaches and possi
 | Account Use Policies (MITRE ID:M1036 / D3-AL) | Set account policies to prevent numerous unauthorized attempts. |
 | Multi-Factor Authentication (MITRE ID: M1036 / D3-MFA) | Use MFA to authenticate authorize users. |
 | Restrict File & Directory Permissions (MITRE ID: M10222) | Restrict read/write access. |
+| Administrative Network Activity Analysis (D3-ANAA) | Detection of unauthorized use of admin protocols against a baseline. |
+| Filter Network Traffic (D3-ITF) | Use network appliances to filter ingress / egress traffic. |
+
+
+
+
 
